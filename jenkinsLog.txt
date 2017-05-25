@@ -1,0 +1,57 @@
+
+Started by user mandanavahedi
+Building in workspace C:\Users\Mandana\workspace\UKLocation
+ > C:\Program Files\Git\bin\git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > C:\Program Files\Git\bin\git.exe config remote.origin.url https://github.com/manvah/ExamTest16-MandanaVahediandonyaparast # timeout=10
+Fetching upstream changes from https://github.com/manvah/ExamTest16-MandanaVahediandonyaparast
+ > C:\Program Files\Git\bin\git.exe --version # timeout=10
+using GIT_ASKPASS to set credentials Git
+ > C:\Program Files\Git\bin\git.exe fetch --tags --progress https://github.com/manvah/ExamTest16-MandanaVahediandonyaparast +refs/heads/*:refs/remotes/origin/*
+ > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 07b5c45a50a3be4634f2c883874a235fb33c1fe9 (refs/remotes/origin/master)
+ > C:\Program Files\Git\bin\git.exe config core.sparsecheckout # timeout=10
+ > C:\Program Files\Git\bin\git.exe checkout -f 07b5c45a50a3be4634f2c883874a235fb33c1fe9
+ > C:\Program Files\Git\bin\git.exe rev-list 07b5c45a50a3be4634f2c883874a235fb33c1fe9 # timeout=10
+Parsing POMs
+Established TCP socket on 57821
+[UKLocation] $ "C:\Program Files\Java\jdk1.8.0_77/bin/java" -cp "C:\Users\Mandana\plugins\maven-plugin\WEB-INF\lib\maven33-agent-1.8.1.jar;C:\Program Files\apache-maven-3.3.9-bin\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar;C:\Program Files\apache-maven-3.3.9-bin\apache-maven-3.3.9/conf/logging" jenkins.maven3.agent.Maven33Main "C:\Program Files\apache-maven-3.3.9-bin\apache-maven-3.3.9" C:\Users\Mandana\war\WEB-INF\lib\remoting-3.7.jar C:\Users\Mandana\plugins\maven-plugin\WEB-INF\lib\maven33-interceptor-1.8.1.jar C:\Users\Mandana\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.8.1.jar 57821
+<===[JENKINS REMOTING CAPACITY]===>channel started
+Executing Maven:  -B -f C:\Users\Mandana\workspace\UKLocation\pom.xml test -DprojectFile=Assignment-soapui-project.xml
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building timesheetapp 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ timesheetapp ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\Users\Mandana\workspace\UKLocation\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ timesheetapp ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ timesheetapp ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\Users\Mandana\workspace\UKLocation\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ timesheetapp ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ timesheetapp ---
+[INFO] No tests to run.
+[JENKINS] Recording test results
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 7.921 s
+[INFO] Finished at: 2017-05-17T12:40:29+02:00
+[INFO] Final Memory: 14M/134M
+[INFO] ------------------------------------------------------------------------
+Waiting for Jenkins to finish collecting data
+[JENKINS] Archiving C:\Users\Mandana\workspace\UKLocation\pom.xml to com.timesheet.app/timesheetapp/1.0-SNAPSHOT/timesheetapp-1.0-SNAPSHOT.pom
+channel stopped
+Warning: you have no plugins providing access control for builds, so falling back to legacy behavior of permitting any downstream builds to be triggered
+Triggering a new build of TimeSheetApp
+Finished: SUCCESS

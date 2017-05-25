@@ -1,0 +1,39 @@
+Started by user mandanavahedi
+Building in workspace C:\Users\Mandana\workspace\TimeSheetApp
+ > C:\Program Files\Git\bin\git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > C:\Program Files\Git\bin\git.exe config remote.origin.url https://github.com/manvah/ExamTest16-MandanaVahediandonyaparast # timeout=10
+Fetching upstream changes from https://github.com/manvah/ExamTest16-MandanaVahediandonyaparast
+ > C:\Program Files\Git\bin\git.exe --version # timeout=10
+using GIT_ASKPASS to set credentials Git
+ > C:\Program Files\Git\bin\git.exe fetch --tags --progress https://github.com/manvah/ExamTest16-MandanaVahediandonyaparast +refs/heads/*:refs/remotes/origin/*
+ > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 07b5c45a50a3be4634f2c883874a235fb33c1fe9 (refs/remotes/origin/master)
+ > C:\Program Files\Git\bin\git.exe config core.sparsecheckout # timeout=10
+ > C:\Program Files\Git\bin\git.exe checkout -f 07b5c45a50a3be4634f2c883874a235fb33c1fe9
+ > C:\Program Files\Git\bin\git.exe rev-list 07b5c45a50a3be4634f2c883874a235fb33c1fe9 # timeout=10
+Parsing POMs
+Established TCP socket on 64376
+[TimeSheetApp] $ "C:\Program Files\Java\jdk1.8.0_77/bin/java" -cp "C:\Users\Mandana\plugins\maven-plugin\WEB-INF\lib\maven33-agent-1.8.1.jar;C:\Program Files\apache-maven-3.3.9-bin\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar;C:\Program Files\apache-maven-3.3.9-bin\apache-maven-3.3.9/conf/logging" jenkins.maven3.agent.Maven33Main "C:\Program Files\apache-maven-3.3.9-bin\apache-maven-3.3.9" C:\Users\Mandana\war\WEB-INF\lib\remoting-3.7.jar C:\Users\Mandana\plugins\maven-plugin\WEB-INF\lib\maven33-interceptor-1.8.1.jar C:\Users\Mandana\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.8.1.jar 64376
+<===[JENKINS REMOTING CAPACITY]===>channel started
+Executing Maven:  -B -f C:\Users\Mandana\workspace\TimeSheetApp\pom.xml com.smartbear.soapui:soapui-maven-plugin:test -DprojectFile=TimeSheetApp-soapui-project.xml
+[INFO] Scanning for projects...
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/smartbear/soapui/soapui-maven-plugin/maven-metadata.xml
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.816 s
+[INFO] Finished at: 2017-05-25T11:01:15+02:00
+[INFO] Final Memory: 11M/102M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Error resolving version for plugin 'com.smartbear.soapui:soapui-maven-plugin' from the repositories [local (C:\WINDOWS\system32\config\systemprofile\.m2\repository), central (https://repo.maven.apache.org/maven2)]: Plugin not found in any plugin repository -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[JENKINS] Archiving C:\Users\Mandana\workspace\TimeSheetApp\pom.xml to com.timesheet.app/timesheetapp/1.0-SNAPSHOT/timesheetapp-1.0-SNAPSHOT.pom
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginVersionResolutionException
+channel stopped
+Finished: FAILURE
